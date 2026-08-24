@@ -1,0 +1,3714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Godson Iwhente — Digital Strategy Coach helping African brands turn attention into customers through digital strategy, marketing and data.">
+
+    <meta name="author" content="Godson Iwhente">
+
+    <meta name="keywords"
+        content="Godson Iwhente, Digital Strategy Coach, Digital Marketing, African Brands, Marketing, Data Analysis, Nigeria">
+
+    <meta name="theme-color" content="#07111f">
+
+    <title>Godson Iwhente | Digital Strategy Coach</title>
+
+
+    <style>
+
+        /* =========================================================
+           GODSON IWHENTE PERSONAL BRAND WEBSITE
+           VERSION 2.0
+        ========================================================= */
+
+
+        /* =========================
+           ROOT VARIABLES
+        ========================= */
+
+        :root {
+
+            --bg: #050b14;
+
+            --bg-2: #081321;
+
+            --bg-3: #0c1929;
+
+            --card: rgba(255,255,255,0.045);
+
+            --card-hover: rgba(255,255,255,0.075);
+
+            --white: #ffffff;
+
+            --text: #e8eef7;
+
+            --muted: #93a4b8;
+
+            --green: #35e88c;
+
+            --green-dark: #1dbb6c;
+
+            --blue: #38bdf8;
+
+            --gold: #f5c451;
+
+            --border: rgba(255,255,255,0.09);
+
+            --shadow: 0 25px 70px rgba(0,0,0,0.35);
+
+            --radius: 20px;
+
+        }
+
+
+        /* =========================
+           RESET
+        ========================= */
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+
+        html {
+
+            scroll-behavior: smooth;
+
+        }
+
+
+        body {
+
+            font-family:
+                Inter,
+                ui-sans-serif,
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+
+            background: var(--bg);
+
+            color: var(--text);
+
+            line-height: 1.7;
+
+            overflow-x: hidden;
+
+        }
+
+
+        body::before {
+
+            content: "";
+
+            position: fixed;
+
+            width: 500px;
+
+            height: 500px;
+
+            top: -250px;
+
+            right: -150px;
+
+            background: rgba(53,232,140,0.08);
+
+            filter: blur(100px);
+
+            border-radius: 50%;
+
+            pointer-events: none;
+
+            z-index: -1;
+
+        }
+
+
+        body::after {
+
+            content: "";
+
+            position: fixed;
+
+            width: 400px;
+
+            height: 400px;
+
+            bottom: -200px;
+
+            left: -150px;
+
+            background: rgba(56,189,248,0.07);
+
+            filter: blur(100px);
+
+            border-radius: 50%;
+
+            pointer-events: none;
+
+            z-index: -1;
+
+        }
+
+
+        a {
+
+            text-decoration: none;
+
+            color: inherit;
+
+        }
+
+
+        button {
+
+            font-family: inherit;
+
+        }
+
+
+        .container {
+
+            width: min(1150px, 90%);
+
+            margin: auto;
+
+        }
+
+
+        section {
+
+            padding: 110px 0;
+
+        }
+
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        .navbar {
+
+            position: fixed;
+
+            top: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            z-index: 1000;
+
+            background: rgba(5,11,20,0.72);
+
+            backdrop-filter: blur(18px);
+
+            -webkit-backdrop-filter: blur(18px);
+
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+
+        }
+
+
+        .nav-inner {
+
+            height: 76px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+        }
+
+
+        .brand {
+
+            font-size: 21px;
+
+            font-weight: 900;
+
+            letter-spacing: -0.5px;
+
+        }
+
+
+        .brand span {
+
+            color: var(--green);
+
+        }
+
+
+        .nav-links {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 30px;
+
+            list-style: none;
+
+        }
+
+
+        .nav-links a {
+
+            color: #b8c5d5;
+
+            font-size: 14px;
+
+            transition: 0.3s ease;
+
+        }
+
+
+        .nav-links a:hover {
+
+            color: var(--green);
+
+        }
+
+
+        .nav-cta {
+
+            background: var(--green);
+
+            color: #04100a !important;
+
+            padding: 10px 18px;
+
+            border-radius: 8px;
+
+            font-weight: 800;
+
+        }
+
+
+        .nav-cta:hover {
+
+            transform: translateY(-2px);
+
+        }
+
+
+        .menu-button {
+
+            display: none;
+
+            background: transparent;
+
+            color: white;
+
+            border: 0;
+
+            font-size: 28px;
+
+            cursor: pointer;
+
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            align-items: center;
+
+            position: relative;
+
+            padding-top: 120px;
+
+            overflow: hidden;
+
+        }
+
+
+        .hero-grid {
+
+            display: grid;
+
+            grid-template-columns: 1.2fr 0.8fr;
+
+            align-items: center;
+
+            gap: 70px;
+
+        }
+
+
+        .eyebrow {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            padding: 8px 13px;
+
+            border: 1px solid rgba(53,232,140,0.25);
+
+            background: rgba(53,232,140,0.06);
+
+            border-radius: 100px;
+
+            color: var(--green);
+
+            font-size: 12px;
+
+            font-weight: 800;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        .eyebrow-dot {
+
+            width: 7px;
+
+            height: 7px;
+
+            background: var(--green);
+
+            border-radius: 50%;
+
+            box-shadow: 0 0 15px var(--green);
+
+        }
+
+
+        .hero h1 {
+
+            font-size: clamp(55px, 8vw, 92px);
+
+            line-height: 0.98;
+
+            letter-spacing: -5px;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        .hero h1 span {
+
+            color: var(--green);
+
+        }
+
+
+        .hero-title {
+
+            font-size: clamp(22px, 3vw, 32px);
+
+            color: #d8e2ee;
+
+            font-weight: 600;
+
+            line-height: 1.25;
+
+            max-width: 700px;
+
+            margin-bottom: 22px;
+
+        }
+
+
+        .hero-description {
+
+            max-width: 680px;
+
+            color: var(--muted);
+
+            font-size: 18px;
+
+            margin-bottom: 35px;
+
+        }
+
+
+        .hero-buttons {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 13px;
+
+        }
+
+
+        .btn {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 10px;
+
+            padding: 14px 23px;
+
+            border-radius: 10px;
+
+            font-weight: 800;
+
+            font-size: 14px;
+
+            transition: 0.3s ease;
+
+        }
+
+
+        .btn-primary {
+
+            background: var(--green);
+
+            color: #04100a;
+
+        }
+
+
+        .btn-primary:hover {
+
+            transform: translateY(-4px);
+
+            box-shadow: 0 15px 35px rgba(53,232,140,0.2);
+
+        }
+
+
+        .btn-secondary {
+
+            border: 1px solid var(--border);
+
+            background: rgba(255,255,255,0.03);
+
+            color: white;
+
+        }
+
+
+        .btn-secondary:hover {
+
+            border-color: var(--green);
+
+            color: var(--green);
+
+        }
+
+
+        /* =========================
+           HERO PROFILE CARD
+        ========================= */
+
+        .hero-card {
+
+            position: relative;
+
+        }
+
+
+        .profile-card {
+
+            min-height: 470px;
+
+            position: relative;
+
+            border-radius: 30px;
+
+            border: 1px solid var(--border);
+
+            background:
+
+                radial-gradient(
+                    circle at 70% 20%,
+                    rgba(53,232,140,0.15),
+                    transparent 35%
+                ),
+
+                linear-gradient(
+                    145deg,
+                    rgba(255,255,255,0.07),
+                    rgba(255,255,255,0.025)
+                );
+
+            box-shadow: var(--shadow);
+
+            overflow: hidden;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+        }
+
+
+        .profile-ring {
+
+            width: 250px;
+
+            height: 250px;
+
+            border-radius: 50%;
+
+            padding: 7px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--green),
+                    var(--blue)
+                );
+
+            box-shadow:
+                0 0 70px rgba(53,232,140,0.15);
+
+        }
+
+
+        .profile-inner {
+
+            width: 100%;
+
+            height: 100%;
+
+            border-radius: 50%;
+
+            background:
+
+                radial-gradient(
+                    circle at 50% 30%,
+                    #163453,
+                    #07111f 70%
+                );
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 78px;
+
+            font-weight: 900;
+
+            color: white;
+
+        }
+
+
+        .floating-card {
+
+            position: absolute;
+
+            background: rgba(8,19,33,0.88);
+
+            border: 1px solid var(--border);
+
+            backdrop-filter: blur(15px);
+
+            padding: 15px 18px;
+
+            border-radius: 13px;
+
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+
+        }
+
+
+        .floating-card small {
+
+            display: block;
+
+            color: var(--muted);
+
+            font-size: 11px;
+
+            margin-bottom: 2px;
+
+        }
+
+
+        .floating-card strong {
+
+            font-size: 15px;
+
+        }
+
+
+        .float-one {
+
+            left: -30px;
+
+            top: 80px;
+
+        }
+
+
+        .float-two {
+
+            right: -25px;
+
+            bottom: 90px;
+
+        }
+
+
+        /* =========================
+           TRUST STRIP
+        ========================= */
+
+        .trust {
+
+            border-top: 1px solid var(--border);
+
+            border-bottom: 1px solid var(--border);
+
+            background: rgba(255,255,255,0.018);
+
+            padding: 28px 0;
+
+        }
+
+
+        .trust-inner {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+            flex-wrap: wrap;
+
+        }
+
+
+        .trust-label {
+
+            color: #718297;
+
+            text-transform: uppercase;
+
+            letter-spacing: 2px;
+
+            font-size: 11px;
+
+            font-weight: 800;
+
+        }
+
+
+        .trust-item {
+
+            color: #b5c1d0;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+        }
+
+
+        /* =========================
+           SECTION HEADINGS
+        ========================= */
+
+        .section-heading {
+
+            max-width: 760px;
+
+            margin-bottom: 55px;
+
+        }
+
+
+        .section-heading.center {
+
+            margin-left: auto;
+
+            margin-right: auto;
+
+            text-align: center;
+
+        }
+
+
+        .section-label {
+
+            color: var(--green);
+
+            text-transform: uppercase;
+
+            letter-spacing: 2px;
+
+            font-size: 12px;
+
+            font-weight: 900;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .section-heading h2 {
+
+            font-size: clamp(34px, 5vw, 56px);
+
+            line-height: 1.05;
+
+            letter-spacing: -2px;
+
+            margin-bottom: 18px;
+
+        }
+
+
+        .section-heading p {
+
+            color: var(--muted);
+
+            font-size: 17px;
+
+        }
+
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about {
+
+            background: var(--bg-2);
+
+        }
+
+
+        .about-grid {
+
+            display: grid;
+
+            grid-template-columns: 0.85fr 1.15fr;
+
+            gap: 70px;
+
+            align-items: center;
+
+        }
+
+
+        .about-visual {
+
+            position: relative;
+
+        }
+
+
+        .about-panel {
+
+            min-height: 470px;
+
+            border: 1px solid var(--border);
+
+            border-radius: 25px;
+
+            background:
+
+                linear-gradient(
+                    145deg,
+                    #0e2236,
+                    #07111f
+                );
+
+            padding: 35px;
+
+            display: flex;
+
+            align-items: flex-end;
+
+            position: relative;
+
+            overflow: hidden;
+
+        }
+
+
+        .about-panel::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 250px;
+
+            height: 250px;
+
+            border-radius: 50%;
+
+            background: rgba(53,232,140,0.1);
+
+            filter: blur(60px);
+
+            top: -100px;
+
+            right: -80px;
+
+        }
+
+
+        .about-initial {
+
+            font-size: 150px;
+
+            font-weight: 950;
+
+            line-height: 1;
+
+            color: rgba(255,255,255,0.055);
+
+            letter-spacing: -15px;
+
+        }
+
+
+        .about-caption {
+
+            position: absolute;
+
+            bottom: 30px;
+
+            left: 35px;
+
+        }
+
+
+        .about-caption strong {
+
+            display: block;
+
+            font-size: 23px;
+
+        }
+
+
+        .about-caption span {
+
+            color: var(--green);
+
+            font-size: 13px;
+
+        }
+
+
+        .about-copy p {
+
+            color: var(--muted);
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .about-copy strong {
+
+            color: white;
+
+        }
+
+
+        .check-list {
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 12px;
+
+            margin-top: 30px;
+
+        }
+
+
+        .check {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 9px;
+
+            color: #d8e2ed;
+
+            font-size: 14px;
+
+        }
+
+
+        .check-icon {
+
+            color: var(--green);
+
+            font-weight: 900;
+
+        }
+
+
+        /* =========================
+           SERVICES
+        ========================= */
+
+        .services-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 18px;
+
+        }
+
+
+        .service {
+
+            padding: 30px;
+
+            border: 1px solid var(--border);
+
+            border-radius: var(--radius);
+
+            background: var(--card);
+
+            transition: 0.35s ease;
+
+            position: relative;
+
+            overflow: hidden;
+
+        }
+
+
+        .service:hover {
+
+            transform: translateY(-8px);
+
+            background: var(--card-hover);
+
+            border-color: rgba(53,232,140,0.3);
+
+            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+
+        }
+
+
+        .service-number {
+
+            color: var(--green);
+
+            font-size: 12px;
+
+            font-weight: 900;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        .service-icon {
+
+            width: 48px;
+
+            height: 48px;
+
+            border-radius: 12px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background: rgba(53,232,140,0.09);
+
+            color: var(--green);
+
+            font-size: 21px;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .service h3 {
+
+            font-size: 21px;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .service p {
+
+            color: var(--muted);
+
+            font-size: 14px;
+
+        }
+
+
+        /* =========================
+           STATS
+        ========================= */
+
+        .stats {
+
+            background: var(--bg-2);
+
+        }
+
+
+        .stats-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            border: 1px solid var(--border);
+
+            border-radius: 20px;
+
+            overflow: hidden;
+
+        }
+
+
+        .stat {
+
+            padding: 35px 25px;
+
+            text-align: center;
+
+            border-right: 1px solid var(--border);
+
+        }
+
+
+        .stat:last-child {
+
+            border-right: none;
+
+        }
+
+
+        .stat-number {
+
+            font-size: 38px;
+
+            font-weight: 900;
+
+            color: var(--green);
+
+            display: block;
+
+            margin-bottom: 4px;
+
+        }
+
+
+        .stat-label {
+
+            color: var(--muted);
+
+            font-size: 13px;
+
+        }
+
+
+        /* =========================
+           JOURNEY
+        ========================= */
+
+        .journey {
+
+            background: var(--bg);
+
+        }
+
+
+        .timeline {
+
+            max-width: 900px;
+
+            margin: auto;
+
+        }
+
+
+        .timeline-item {
+
+            display: grid;
+
+            grid-template-columns: 160px 1fr;
+
+            gap: 35px;
+
+            position: relative;
+
+            padding-bottom: 50px;
+
+        }
+
+
+        .timeline-item:last-child {
+
+            padding-bottom: 0;
+
+        }
+
+
+        .timeline-date {
+
+            color: var(--green);
+
+            font-weight: 800;
+
+            font-size: 13px;
+
+            padding-top: 5px;
+
+        }
+
+
+        .timeline-content {
+
+            border-left: 1px solid rgba(53,232,140,0.35);
+
+            padding-left: 30px;
+
+            position: relative;
+
+        }
+
+
+        .timeline-content::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 9px;
+
+            height: 9px;
+
+            border-radius: 50%;
+
+            background: var(--green);
+
+            left: -5px;
+
+            top: 7px;
+
+            box-shadow: 0 0 15px rgba(53,232,140,0.7);
+
+        }
+
+
+        .timeline-content h3 {
+
+            font-size: 22px;
+
+            margin-bottom: 3px;
+
+        }
+
+
+        .timeline-company {
+
+            color: var(--blue);
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .timeline-content p {
+
+            color: var(--muted);
+
+            font-size: 14px;
+
+        }
+
+
+        /* =========================
+           EXPERTISE
+        ========================= */
+
+        .expertise {
+
+            background: var(--bg-2);
+
+        }
+
+
+        .expertise-grid {
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 20px;
+
+        }
+
+
+        .expertise-card {
+
+            border: 1px solid var(--border);
+
+            background: var(--card);
+
+            border-radius: 18px;
+
+            padding: 30px;
+
+        }
+
+
+        .expertise-card h3 {
+
+            margin-bottom: 20px;
+
+            font-size: 20px;
+
+        }
+
+
+        .skill-list {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 9px;
+
+        }
+
+
+        .skill {
+
+            padding: 8px 12px;
+
+            border-radius: 7px;
+
+            background: rgba(255,255,255,0.05);
+
+            color: #c5d1df;
+
+            font-size: 12px;
+
+            border: 1px solid var(--border);
+
+        }
+
+
+        /* =========================
+           PHILOSOPHY
+        ========================= */
+
+        .philosophy {
+
+            padding: 120px 0;
+
+        }
+
+
+        .quote-box {
+
+            max-width: 950px;
+
+            margin: auto;
+
+            text-align: center;
+
+        }
+
+
+        .quote-mark {
+
+            font-size: 70px;
+
+            color: var(--green);
+
+            line-height: 0.7;
+
+            opacity: 0.7;
+
+        }
+
+
+        .quote-box blockquote {
+
+            font-size: clamp(28px, 5vw, 51px);
+
+            line-height: 1.15;
+
+            letter-spacing: -2px;
+
+            font-weight: 800;
+
+            margin: 30px 0;
+
+        }
+
+
+        .quote-box p {
+
+            color: var(--muted);
+
+        }
+
+
+        /* =========================
+           EDUCATION
+        ========================= */
+
+        .education-grid {
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 18px;
+
+        }
+
+
+        .education-card {
+
+            border: 1px solid var(--border);
+
+            border-radius: 18px;
+
+            padding: 28px;
+
+            background: var(--card);
+
+        }
+
+
+        .education-card .label {
+
+            color: var(--green);
+
+            font-size: 11px;
+
+            font-weight: 900;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1.5px;
+
+        }
+
+
+        .education-card h3 {
+
+            font-size: 20px;
+
+            margin: 8px 0;
+
+        }
+
+
+        .education-card p {
+
+            color: var(--muted);
+
+            font-size: 14px;
+
+        }
+
+
+        /* =========================
+           CTA
+        ========================= */
+
+        .cta {
+
+            padding: 100px 0;
+
+        }
+
+
+        .cta-box {
+
+            position: relative;
+
+            overflow: hidden;
+
+            border-radius: 28px;
+
+            padding: 75px 50px;
+
+            text-align: center;
+
+            background:
+
+                radial-gradient(
+                    circle at 50% 0%,
+                    rgba(53,232,140,0.17),
+                    transparent 45%
+                ),
+
+                linear-gradient(
+                    145deg,
+                    #0d2637,
+                    #07111f
+                );
+
+            border: 1px solid rgba(53,232,140,0.18);
+
+        }
+
+
+        .cta-box h2 {
+
+            font-size: clamp(35px, 6vw, 60px);
+
+            line-height: 1;
+
+            letter-spacing: -2px;
+
+            margin-bottom: 18px;
+
+        }
+
+
+        .cta-box p {
+
+            max-width: 650px;
+
+            margin: auto auto 30px;
+
+            color: var(--muted);
+
+        }
+
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact {
+
+            background: var(--bg-2);
+
+        }
+
+
+        .contact-grid {
+
+            display: grid;
+
+            grid-template-columns: 0.8fr 1.2fr;
+
+            gap: 60px;
+
+        }
+
+
+        .contact-info h2 {
+
+            font-size: 40px;
+
+            line-height: 1.1;
+
+            margin-bottom: 18px;
+
+        }
+
+
+        .contact-info > p {
+
+            color: var(--muted);
+
+            margin-bottom: 30px;
+
+        }
+
+
+        .contact-item {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+
+            margin-bottom: 17px;
+
+        }
+
+
+        .contact-icon {
+
+            width: 42px;
+
+            height: 42px;
+
+            border-radius: 10px;
+
+            background: rgba(53,232,140,0.08);
+
+            color: var(--green);
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+        }
+
+
+        .contact-item small {
+
+            display: block;
+
+            color: #718297;
+
+            font-size: 11px;
+
+        }
+
+
+        .contact-item strong {
+
+            font-size: 14px;
+
+        }
+
+
+        .contact-form {
+
+            background: var(--card);
+
+            border: 1px solid var(--border);
+
+            border-radius: 20px;
+
+            padding: 30px;
+
+        }
+
+
+        .form-row {
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 14px;
+
+        }
+
+
+        .form-group {
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .form-group label {
+
+            display: block;
+
+            color: #c6d1df;
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            margin-bottom: 7px;
+
+        }
+
+
+        .form-group input,
+
+        .form-group textarea {
+
+            width: 100%;
+
+            border: 1px solid var(--border);
+
+            background: rgba(0,0,0,0.15);
+
+            color: white;
+
+            padding: 13px;
+
+            border-radius: 8px;
+
+            outline: none;
+
+            font-family: inherit;
+
+        }
+
+
+        .form-group input:focus,
+
+        .form-group textarea:focus {
+
+            border-color: var(--green);
+
+        }
+
+
+        .form-group textarea {
+
+            min-height: 130px;
+
+            resize: vertical;
+
+        }
+
+
+        .form-note {
+
+            color: #718297;
+
+            font-size: 11px;
+
+            margin-top: 10px;
+
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+
+            border-top: 1px solid var(--border);
+
+            padding: 30px 0;
+
+            color: #718297;
+
+            font-size: 12px;
+
+        }
+
+
+        .footer-inner {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            gap: 20px;
+
+        }
+
+
+        .footer-brand {
+
+            color: white;
+
+            font-weight: 900;
+
+        }
+
+
+        .footer-brand span {
+
+            color: var(--green);
+
+        }
+
+
+        /* =========================
+           WHATSAPP BUTTON
+        ========================= */
+
+        .whatsapp {
+
+            position: fixed;
+
+            right: 25px;
+
+            bottom: 25px;
+
+            width: 58px;
+
+            height: 58px;
+
+            border-radius: 50%;
+
+            background: #25d366;
+
+            color: white;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 12px;
+
+            font-weight: 900;
+
+            z-index: 999;
+
+            box-shadow: 0 12px 35px rgba(0,0,0,0.35);
+
+            transition: 0.3s;
+
+        }
+
+
+        .whatsapp:hover {
+
+            transform: scale(1.08);
+
+        }
+
+
+        /* =========================
+           REVEAL ANIMATION
+        ========================= */
+
+        .reveal {
+
+            opacity: 0;
+
+            transform: translateY(25px);
+
+            transition: 0.8s ease;
+
+        }
+
+
+        .reveal.visible {
+
+            opacity: 1;
+
+            transform: translateY(0);
+
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media(max-width: 950px) {
+
+            .hero-grid,
+
+            .about-grid,
+
+            .contact-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .hero-card {
+
+                max-width: 600px;
+
+                margin: auto;
+
+            }
+
+
+            .services-grid {
+
+                grid-template-columns: 1fr 1fr;
+
+            }
+
+
+            .stats-grid {
+
+                grid-template-columns: 1fr 1fr;
+
+            }
+
+
+            .stat {
+
+                border-bottom: 1px solid var(--border);
+
+            }
+
+
+            .stat:nth-child(2) {
+
+                border-right: none;
+
+            }
+
+
+            .expertise-grid,
+
+            .education-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+        }
+
+
+        @media(max-width: 700px) {
+
+            .menu-button {
+
+                display: block;
+
+            }
+
+
+            .nav-links {
+
+                display: none;
+
+                position: absolute;
+
+                top: 76px;
+
+                left: 0;
+
+                width: 100%;
+
+                padding: 25px;
+
+                background: #050b14;
+
+                flex-direction: column;
+
+                align-items: flex-start;
+
+                border-bottom: 1px solid var(--border);
+
+            }
+
+
+            .nav-links.active {
+
+                display: flex;
+
+            }
+
+
+            .hero {
+
+                padding-top: 140px;
+
+            }
+
+
+            .hero h1 {
+
+                letter-spacing: -3px;
+
+            }
+
+
+            .services-grid,
+
+            .stats-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .stat {
+
+                border-right: none;
+
+            }
+
+
+            .timeline-item {
+
+                grid-template-columns: 1fr;
+
+                gap: 8px;
+
+            }
+
+
+            .timeline-content {
+
+                padding-left: 23px;
+
+            }
+
+
+            .check-list {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .form-row {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .footer-inner {
+
+                flex-direction: column;
+
+                text-align: center;
+
+            }
+
+
+            .float-one {
+
+                left: 10px;
+
+            }
+
+
+            .float-two {
+
+                right: 10px;
+
+            }
+
+        }
+
+
+        @media(max-width: 500px) {
+
+            section {
+
+                padding: 80px 0;
+
+            }
+
+
+            .profile-card {
+
+                min-height: 380px;
+
+            }
+
+
+            .profile-ring {
+
+                width: 190px;
+
+                height: 190px;
+
+            }
+
+
+            .profile-inner {
+
+                font-size: 55px;
+
+            }
+
+
+            .floating-card {
+
+                padding: 10px 12px;
+
+            }
+
+
+            .cta-box {
+
+                padding: 55px 25px;
+
+            }
+
+
+            .contact-form {
+
+                padding: 20px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ======================================
+         NAVIGATION
+    ======================================= -->
+
+    <header class="navbar">
+
+        <div class="container nav-inner">
+
+            <a href="#home" class="brand">
+                GODSON<span>.</span>
+            </a>
+
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                aria-label="Open menu">
+
+                ☰
+
+            </button>
+
+
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+
+                <li>
+                    <a href="#journey">Journey</a>
+                </li>
+
+                <li>
+                    <a href="#expertise">Expertise</a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="nav-cta">
+                        Let's Talk
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ======================================
+         HERO
+    ======================================= -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="container hero-grid">
+
+
+                <div class="hero-content reveal">
+
+                    <div class="eyebrow">
+
+                        <span class="eyebrow-dot"></span>
+
+                        Digital Strategy Coach for African Brands
+
+                    </div>
+
+
+                    <h1>
+
+                        Godson
+                        <span>Iwhente</span>
+
+                    </h1>
+
+
+                    <h2 class="hero-title">
+
+                        Helping African businesses turn
+                        attention into customers.
+
+                    </h2>
+
+
+                    <p class="hero-description">
+
+                        I combine digital strategy, marketing,
+                        communications and data to help brands
+                        build stronger audiences, create meaningful
+                        engagement and pursue sustainable growth.
+
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="#services"
+                            class="btn btn-primary">
+
+                            Explore What I Do
+                            →
+                        </a>
+
+
+                        <a
+                            href="#contact"
+                            class="btn btn-secondary">
+
+                            Start a Conversation
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="hero-card reveal">
+
+                    <div class="profile-card">
+
+                        <div class="profile-ring">
+
+                            <div class="profile-inner">
+
+                                GI
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="floating-card float-one">
+
+                            <small>
+                                Focus
+                            </small>
+
+                            <strong>
+                                Digital Growth
+                            </strong>
+
+                        </div>
+
+
+                        <div class="floating-card float-two">
+
+                            <small>
+                                Based in
+                            </small>
+
+                            <strong>
+                                Lagos, Nigeria
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             TRUST STRIP
+        ======================================= -->
+
+        <div class="trust">
+
+            <div class="container trust-inner">
+
+                <span class="trust-label">
+                    Experience across
+                </span>
+
+                <span class="trust-item">
+                    Digital Marketing
+                </span>
+
+                <span class="trust-item">
+                    Data & Analytics
+                </span>
+
+                <span class="trust-item">
+                    Media & Communications
+                </span>
+
+                <span class="trust-item">
+                    Business
+                </span>
+
+                <span class="trust-item">
+                    Real Estate
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ======================================
+             ABOUT
+        ======================================= -->
+
+        <section class="about" id="about">
+
+            <div class="container">
+
+
+                <div class="section-heading reveal">
+
+                    <div class="section-label">
+                        About Godson
+                    </div>
+
+                    <h2>
+                        A marketer with an
+                        analytical mind.
+                    </h2>
+
+                    <p>
+                        Strategy sits at the intersection of
+                        creativity, business and data.
+                    </p>
+
+                </div>
+
+
+
+                <div class="about-grid">
+
+
+                    <div class="about-visual reveal">
+
+                        <div class="about-panel">
+
+                            <div class="about-initial">
+                                GI
+                            </div>
+
+                            <div class="about-caption">
+
+                                <strong>
+                                    Godson Iwhente
+                                </strong>
+
+                                <span>
+                                    Digital Strategy • Marketing • Data
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="about-copy reveal">
+
+                        <p>
+
+                            Godson Iwhente is a Nigerian
+                            multidisciplinary professional whose
+                            experience spans <strong>digital marketing,
+                            social media, data analysis, media,
+                            communications and business operations.</strong>
+
+                        </p>
+
+
+                        <p>
+
+                            His public professional profile describes
+                            him as a <strong>Digital Strategy Coach for
+                            African brands</strong>, with a focus on
+                            helping businesses move from simply
+                            attracting followers toward building
+                            audiences and customers.
+
+                        </p>
+
+
+                        <p>
+
+                            His background in Statistics adds an
+                            analytical dimension to his marketing work,
+                            allowing him to approach communication,
+                            campaigns and business decisions with both
+                            creativity and data.
+
+                        </p>
+
+
+                        <p>
+
+                            His professional journey has included work
+                            with organisations in real estate,
+                            television/media, healthcare and other
+                            business environments.
+
+                        </p>
+
+
+                        <div class="check-list">
+
+                            <div class="check">
+
+                                <span class="check-icon">✓</span>
+
+                                Digital Strategy
+
+                            </div>
+
+
+                            <div class="check">
+
+                                <span class="check-icon">✓</span>
+
+                                Marketing
+
+                            </div>
+
+
+                            <div class="check">
+
+                                <span class="check-icon">✓</span>
+
+                                Data Analysis
+
+                            </div>
+
+
+                            <div class="check">
+
+                                <span class="check-icon">✓</span>
+
+                                Business Growth
+
+                            </div>
+
+
+                            <div class="check">
+
+                                <span class="check-icon">✓</span>
+
+                                Communications
+
+                            </div>
+
+
+                            <div class="check">
+
+                                <span class="check-icon">✓</span>
+
+                                Content Strategy
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             SERVICES
+        ======================================= -->
+
+        <section id="services">
+
+            <div class="container">
+
+
+                <div class="section-heading center reveal">
+
+                    <div class="section-label">
+                        What I Do
+                    </div>
+
+                    <h2>
+                        Strategy that connects
+                        brands with people.
+                    </h2>
+
+                    <p>
+                        Practical digital and marketing solutions
+                        designed around business objectives.
+                    </p>
+
+                </div>
+
+
+
+                <div class="services-grid">
+
+
+                    <article class="service reveal">
+
+                        <div class="service-number">
+                            01
+                        </div>
+
+                        <div class="service-icon">
+                            ◇
+                        </div>
+
+                        <h3>
+                            Digital Strategy
+                        </h3>
+
+                        <p>
+                            Develop practical digital strategies
+                            that give businesses clearer direction,
+                            stronger positioning and better opportunities
+                            to convert attention into business.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="service reveal">
+
+                        <div class="service-number">
+                            02
+                        </div>
+
+                        <div class="service-icon">
+                            ◎
+                        </div>
+
+                        <h3>
+                            Social Media Marketing
+                        </h3>
+
+                        <p>
+                            Plan and manage social-media activity
+                            around content, engagement, audience
+                            development and measurable business goals.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="service reveal">
+
+                        <div class="service-number">
+                            03
+                        </div>
+
+                        <div class="service-icon">
+                            ↗
+                        </div>
+
+                        <h3>
+                            Marketing & Growth
+                        </h3>
+
+                        <p>
+                            Connect marketing activity to real
+                            business objectives through audience
+                            research, campaigns, positioning and
+                            strategic communication.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="service reveal">
+
+                        <div class="service-number">
+                            04
+                        </div>
+
+                        <div class="service-icon">
+                            ◌
+                        </div>
+
+                        <h3>
+                            Data & Analytics
+                        </h3>
+
+                        <p>
+                            Use data, reporting and analytical tools
+                            to identify patterns, monitor performance
+                            and support informed decision-making.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="service reveal">
+
+                        <div class="service-number">
+                            05
+                        </div>
+
+                        <div class="service-icon">
+                            +
+                        </div>
+
+                        <h3>
+                            Content Strategy
+                        </h3>
+
+                        <p>
+                            Build content systems designed to educate,
+                            engage and develop stronger relationships
+                            between brands and their audiences.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="service reveal">
+
+                        <div class="service-number">
+                            06
+                        </div>
+
+                        <div class="service-icon">
+                            ◉
+                        </div>
+
+                        <h3>
+                            Business Development
+                        </h3>
+
+                        <p>
+                            Support businesses with market research,
+                            communications, relationship building and
+                            practical growth initiatives.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             STATS
+        ======================================= -->
+
+        <section class="stats">
+
+            <div class="container">
+
+                <div class="stats-grid reveal">
+
+
+                    <div class="stat">
+
+                        <span
+                            class="stat-number"
+                            data-target="7">
+                            0
+                        </span>
+
+                        <span class="stat-label">
+                            Years of documented professional experience
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <span
+                            class="stat-number"
+                            data-target="4">
+                            0
+                        </span>
+
+                        <span class="stat-label">
+                            Professional certifications
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <span
+                            class="stat-number"
+                            data-target="6">
+                            0
+                        </span>
+
+                        <span class="stat-label">
+                            Major professional areas
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <span
+                            class="stat-number"
+                            data-target="1">
+                            0
+                        </span>
+
+                        <span class="stat-label">
+                            Mission: stronger African brands
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             JOURNEY
+        ======================================= -->
+
+        <section class="journey" id="journey">
+
+            <div class="container">
+
+
+                <div class="section-heading center reveal">
+
+                    <div class="section-label">
+                        Professional Journey
+                    </div>
+
+                    <h2>
+                        From maritime studies
+                        to digital strategy.
+                    </h2>
+
+                    <p>
+                        A career shaped by analytics, communication,
+                        marketing and entrepreneurship.
+                    </p>
+
+                </div>
+
+
+
+                <div class="timeline">
+
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-date">
+                            2022 — Present
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                Social Media Manager
+                            </h3>
+
+                            <div class="timeline-company">
+                                Gidi Real Estate Investment Limited
+                            </div>
+
+                            <p>
+                                Marketing, social-media management,
+                                audience research, campaign reporting,
+                                content development and business
+                                development support.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-date">
+                            2020 — 2022
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                Social Media Marketing Manager
+                            </h3>
+
+                            <div class="timeline-company">
+                                GOLF TV
+                            </div>
+
+                            <p>
+                                Marketing campaigns, sponsorship
+                                initiatives, promotional materials,
+                                project coordination and social-media
+                                campaigns.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-date">
+                            2019 — 2020
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                Data Analyst
+                            </h3>
+
+                            <div class="timeline-company">
+                                Society for Family Health
+                            </div>
+
+                            <p>
+                                SQL, databases, reporting, business
+                                intelligence and analysis of data
+                                trends and organisational information.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-date">
+                            2018 — 2019
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                Media Coordinator
+                            </h3>
+
+                            <div class="timeline-company">
+                                Buhari New Media Centre
+                            </div>
+
+                            <p>
+                                Media campaign coordination, digital
+                                production, advertising strategies and
+                                communications initiatives.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-date">
+                            2016 — 2018
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                Poultry Farm Manager
+                            </h3>
+
+                            <div class="timeline-company">
+                                Glorious Poultry
+                            </div>
+
+                            <p>
+                                Team supervision, operational processes,
+                                inventory, business accounts and
+                                production management.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             EXPERTISE
+        ======================================= -->
+
+        <section class="expertise" id="expertise">
+
+            <div class="container">
+
+
+                <div class="section-heading reveal">
+
+                    <div class="section-label">
+                        Expertise
+                    </div>
+
+                    <h2>
+                        Creative thinking.
+                        Analytical execution.
+                    </h2>
+
+                    <p>
+                        A multidisciplinary skill set built across
+                        marketing, data, communication and business.
+                    </p>
+
+                </div>
+
+
+
+                <div class="expertise-grid">
+
+
+                    <div class="expertise-card reveal">
+
+                        <h3>
+                            Marketing & Strategy
+                        </h3>
+
+                        <div class="skill-list">
+
+                            <span class="skill">
+                                Digital Marketing
+                            </span>
+
+                            <span class="skill">
+                                Social Media
+                            </span>
+
+                            <span class="skill">
+                                Campaign Management
+                            </span>
+
+                            <span class="skill">
+                                Strategic Planning
+                            </span>
+
+                            <span class="skill">
+                                Copywriting
+                            </span>
+
+                            <span class="skill">
+                                Content Strategy
+                            </span>
+
+                            <span class="skill">
+                                Marketing Analytics
+                            </span>
+
+                            <span class="skill">
+                                Brand Management
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="expertise-card reveal">
+
+                        <h3>
+                            Data & Technology
+                        </h3>
+
+                        <div class="skill-list">
+
+                            <span class="skill">
+                                Microsoft Excel
+                            </span>
+
+                            <span class="skill">
+                                SQL
+                            </span>
+
+                            <span class="skill">
+                                SPSS
+                            </span>
+
+                            <span class="skill">
+                                Tableau
+                            </span>
+
+                            <span class="skill">
+                                Data Analysis
+                            </span>
+
+                            <span class="skill">
+                                Business Intelligence
+                            </span>
+
+                            <span class="skill">
+                                Data Reporting
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             PHILOSOPHY
+        ======================================= -->
+
+        <section class="philosophy">
+
+            <div class="container">
+
+                <div class="quote-box reveal">
+
+                    <div class="quote-mark">
+                        “
+                    </div>
+
+                    <blockquote>
+                        Stop chasing customers.
+                        Build the community.
+                        Then let trust do its job.
+                    </blockquote>
+
+                    <p>
+                        A philosophy reflected in Godson's public
+                        digital-strategy content around building
+                        audiences and communities rather than treating
+                        followers simply as buyers.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             EDUCATION
+        ======================================= -->
+
+        <section>
+
+            <div class="container">
+
+
+                <div class="section-heading center reveal">
+
+                    <div class="section-label">
+                        Education
+                    </div>
+
+                    <h2>
+                        The foundation behind
+                        the strategy.
+                    </h2>
+
+                </div>
+
+
+
+                <div class="education-grid">
+
+
+                    <div class="education-card reveal">
+
+                        <div class="label">
+                            Degree
+                        </div>
+
+                        <h3>
+                            B.Sc. Statistics
+                        </h3>
+
+                        <p>
+                            Ahmadu Bello University, Zaria
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="education-card reveal">
+
+                        <div class="label">
+                            National Diploma
+                        </div>
+
+                        <h3>
+                            Boat & Ship Building Technology
+                        </h3>
+
+                        <p>
+                            Maritime Academy of Nigeria, Oron
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="education-card reveal">
+
+                        <div class="label">
+                            Professional Certificate
+                        </div>
+
+                        <h3>
+                            Google Digital Marketing
+                        </h3>
+
+                        <p>
+                            Google Digital Marketing Certificate
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="education-card reveal">
+
+                        <div class="label">
+                            Additional Training
+                        </div>
+
+                        <h3>
+                            Data & Business Analytics
+                        </h3>
+
+                        <p>
+                            Training covering data science,
+                            business analytics and Tableau.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             CTA
+        ======================================= -->
+
+        <section class="cta">
+
+            <div class="container">
+
+                <div class="cta-box reveal">
+
+                    <h2>
+                        Have a brand
+                        worth building?
+                    </h2>
+
+                    <p>
+                        Let's talk about how digital strategy,
+                        marketing and better communication can help
+                        move your business forward.
+                    </p>
+
+
+                    <a
+                        href="#contact"
+                        class="btn btn-primary">
+
+                        Start a Conversation
+                        →
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             CONTACT
+        ======================================= -->
+
+        <section class="contact" id="contact">
+
+            <div class="container contact-grid">
+
+
+                <div class="contact-info reveal">
+
+                    <div class="section-label">
+                        Contact
+                    </div>
+
+                    <h2>
+                        Let's build
+                        something meaningful.
+                    </h2>
+
+                    <p>
+                        For digital strategy, marketing,
+                        collaborations, business opportunities
+                        or professional conversations.
+                    </p>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            @
+                        </div>
+
+                        <div>
+
+                            <small>
+                                EMAIL
+                            </small>
+
+                            <strong>
+                                YOUR-EMAIL@example.com
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            WA
+                        </div>
+
+                        <div>
+
+                            <small>
+                                WHATSAPP
+                            </small>
+
+                            <strong>
+                                YOUR WHATSAPP NUMBER
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            ◉
+                        </div>
+
+                        <div>
+
+                            <small>
+                                LOCATION
+                            </small>
+
+                            <strong>
+                                Lagos, Nigeria
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="contact-form reveal">
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label>
+                                Your Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Your name">
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="you@example.com">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Subject
+                        </label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            placeholder="How can I help?">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            placeholder="Tell me a little about your project or idea..."></textarea>
+
+                    </div>
+
+
+                    <button
+                        class="btn btn-primary"
+                        style="border:0;cursor:pointer;width:100%;"
+                        onclick="sendEmail()">
+
+                        Send Message
+                        →
+
+                    </button>
+
+
+                    <p class="form-note">
+                        This button opens your email application.
+                        No paid contact-form service is required.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ======================================
+         FOOTER
+    ======================================= -->
+
+    <footer>
+
+        <div class="container footer-inner">
+
+            <div>
+
+                © <span id="year"></span>
+
+                <span class="footer-brand">
+                    Godson<span>.</span>
+                </span>
+
+                All rights reserved.
+
+            </div>
+
+
+            <div>
+
+                Digital Strategy • Marketing • Data
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ======================================
+         WHATSAPP
+    ======================================= -->
+
+    <!--
+        IMPORTANT:
+
+        Replace 234XXXXXXXXXX with your real
+        WhatsApp number.
+
+        Example:
+        https://wa.me/2348012345678
+    -->
+
+    <a
+        href="https://wa.me/234XXXXXXXXXX"
+        class="whatsapp"
+        target="_blank"
+        aria-label="WhatsApp">
+
+        WA
+
+    </a>
+
+
+
+    <!-- ======================================
+         JAVASCRIPT
+    ======================================= -->
+
+    <script>
+
+
+        /* =========================
+           MOBILE MENU
+        ========================= */
+
+        const menuButton =
+            document.getElementById("menuButton");
+
+        const navLinks =
+            document.getElementById("navLinks");
+
+
+        menuButton.addEventListener("click", function() {
+
+            navLinks.classList.toggle("active");
+
+        });
+
+
+        document.querySelectorAll(".nav-links a")
+            .forEach(function(link) {
+
+                link.addEventListener("click", function() {
+
+                    navLinks.classList.remove("active");
+
+                });
+
+            });
+
+
+
+        /* =========================
+           CURRENT YEAR
+        ========================= */
+
+        document.getElementById("year")
+            .textContent = new Date().getFullYear();
+
+
+
+        /* =========================
+           SCROLL REVEAL
+        ========================= */
+
+        const revealElements =
+            document.querySelectorAll(".reveal");
+
+
+        const revealObserver =
+            new IntersectionObserver(
+
+                function(entries) {
+
+                    entries.forEach(function(entry) {
+
+                        if (entry.isIntersecting) {
+
+                            entry.target
+                                .classList
+                                .add("visible");
+
+                        }
+
+                    });
+
+                },
+
+                {
+                    threshold: 0.12
+                }
+
+            );
+
+
+        revealElements.forEach(function(element) {
+
+            revealObserver.observe(element);
+
+        });
+
+
+
+        /* =========================
+           ANIMATED STATS
+        ========================= */
+
+        const counters =
+            document.querySelectorAll(".stat-number");
+
+
+        let countersStarted = false;
+
+
+        function startCounters() {
+
+            if (countersStarted) return;
+
+            countersStarted = true;
+
+
+            counters.forEach(function(counter) {
+
+                const target =
+                    Number(counter.dataset.target);
+
+                let current = 0;
+
+                const increment =
+                    Math.max(1, Math.ceil(target / 40));
+
+
+                const timer =
+                    setInterval(function() {
+
+                        current += increment;
+
+
+                        if (current >= target) {
+
+                            current = target;
+
+                            clearInterval(timer);
+
+                        }
+
+
+                        counter.textContent =
+                            current + "+";
+
+                    }, 35);
+
+            });
+
+        }
+
+
+        const statsSection =
+            document.querySelector(".stats");
+
+
+        const statsObserver =
+            new IntersectionObserver(
+
+                function(entries) {
+
+                    if (entries[0].isIntersecting) {
+
+                        startCounters();
+
+                    }
+
+                },
+
+                {
+                    threshold: 0.3
+                }
+
+            );
+
+
+        statsObserver.observe(statsSection);
+
+
+
+        /* =========================
+           CONTACT EMAIL
+        ========================= */
+
+        function sendEmail() {
+
+
+            /*
+                IMPORTANT:
+
+                Replace the email below with
+                your actual email address.
+            */
+
+            const destination =
+                "YOUR-EMAIL@example.com";
+
+
+            const name =
+                document.getElementById("name").value;
+
+
+            const email =
+                document.getElementById("email").value;
+
+
+            const subject =
+                document.getElementById("subject").value;
+
+
+            const message =
+                document.getElementById("message").value;
+
+
+            const body =
+
+                "Name: " + name +
+                "\nEmail: " + email +
+                "\n\nMessage:\n" + message;
+
+
+            window.location.href =
+
+                "mailto:" +
+                destination +
+                "?subject=" +
+                encodeURIComponent(subject) +
+                "&body=" +
+                encodeURIComponent(body);
+
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
